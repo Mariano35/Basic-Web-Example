@@ -145,7 +145,7 @@ body{
 }
 
 .movie-list-container{
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .movie-list-title{
@@ -221,4 +221,14 @@ body{
     left: 10px;
     opacity: 0;
     transition: 1s all ease-in-out;
+}
+
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: #bdb8b8;
+    opacity: 0.75;
+    cursor: pointer;
 }
