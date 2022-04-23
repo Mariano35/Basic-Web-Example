@@ -89,6 +89,7 @@ body{
     right: 1px;
     border-radius: 50%;
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 .sidebar{
@@ -148,8 +149,13 @@ body{
     padding: 0 20px;
 }
 
-.movie-list-title{
-    
+.movie-list-title.active{
+    color: #000000;
+}
+
+.movie-list-title:first-child,
+.movie-list-title:nth-last-child(2){
+    padding: 20px;
 }
 
 .movie-list-wrapper{
@@ -231,4 +237,33 @@ body{
     color: #bdb8b8;
     opacity: 0.75;
     cursor: pointer;
+}
+
+.container.active,
+.sidebar.active{
+    background-color: #fff;
+}
+
+.navbar-container.active{
+    background-color: #fff;
+    color: #000000;
+}
+
+.left-menu-icon.active{
+    color: #000000;
+}
+
+.toggle.active{
+    background-color: #000000;
+}
+
+.toggle-ball.active{
+    background-color: #fff;
+    transform: translateX(-20px);
+}
+
+@media only screen and (max-width: 940px) {
+    .menu-container{
+        display: none;
+    }    
 }
